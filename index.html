@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="home">
+<div class="container">
+
+    <div class="slider-container">
+      <div class="slider">
+      	
+        <div class="slide">
+          <div class="slider-text">JCC  <a>OIL</a></div>
+          <img src="./img/jcc1.jpg" alt="Gambar 1">
+        </div>
+        
+         <div class="slide">
+          <div class="slider-text"></div>
+          <img src="./img/jcc2.jpg" alt="Gambar 1">
+        </div>
+        
+          <div class="slide">
+          <div class="slider-text"></div>
+          <img src="./img/jcc3.jpg" alt="Gambar 1">
+        </div>
+        
+          <div class="slide">
+          <div class="slider-text"></div>
+          <img src="./img/jcc4.jpg" alt="Gambar 1">
+        </div>
+        <!-- Tambahkan gambar dan teks sesuai kebutuhan -->
+      </div>
+    </div>
+    
+  </div>
+  
+  <div id="about">
+<div class="container">
+<article>
+      <h1>JCC Oil: Mengenal Lebih Dekat Minyak Berkualitas Tinggi</h1>
+      <p>Artikel ini membahas berbagai aspek seputar JCC Oil, minyak berkualitas tinggi yang memberikan manfaat luar biasa bagi kesehatan.</p>
+
+      <h2>Apa itu JCC Oil?</h2>
+      <p>JCC Oil adalah minyak alami yang diekstrak dari bahan-bahan berkualitas tinggi, seperti biji-bijian, buah-buahan, dan sayuran. Minyak ini dikenal karena kandungan nutrisinya yang kaya, termasuk asam lemak omega-3, vitamin, dan antioksidan.</p>
+
+      <h2>Manfaat JCC Oil untuk Kesehatan</h2>
+      <p>JCC Oil memiliki sejumlah manfaat kesehatan, antara lain:</p>
+      <ul>
+        <li>Menyupport kesehatan jantung</li>
+        <li>Mendukung fungsi otak</li>
+        <li>Menyediakan sumber energi yang berkelanjutan</li>
+        <li>Membantu menjaga kulit dan rambut tetap sehat</li>
+      </ul>
+
+      <h2>Cara Menggunakan JCC Oil</h2>
+      <p>Ada berbagai cara untuk mengintegrasikan JCC Oil dalam pola makan sehari-hari, termasuk:</p>
+      <ol>
+        <li>Menambahkan pada salad sebagai dressing sehat</li>
+        <li>Menggunakan sebagai bahan dalam masakan sehari-hari</li>
+        <li>Menambahkan pada smoothie untuk nutrisi tambahan</li>
+      </ol>
+
+      <h2>Keamanan dan Kualitas</h2>
+      <p>JCC Oil diproduksi dengan standar kualitas tinggi dan melalui proses ekstraksi yang cermat. Pastikan untuk membeli produk yang telah teruji dan memiliki sertifikasi keamanan.</p>
+
+      
+    </article>
+</div>
+
+<div id="testimoni"></div>
+<div class="testimony-container">
+      <h2 class="container">Testimoni Pengguna</h2>
+      <div class="testimony-slider">
+      	
+        <div class="testimony">
+          <p>"JCC Oil benar-benar mengubah hidup saya. Saya merasa lebih sehat dan bertenaga setiap hari."</p>
+          <p class="testimony-author">- John Doe</p>
+        </div>
+        
+      </div>
+    </div>
+
+
+<div id="kontak">
+<div class="container">
+<div class="contact-container">
+      <div class="contact-info">
+        <img src="./img/whatsapp-icon.png" alt="WhatsApp Icon">
+        <p>No. WhatsApp: <a href="https://wa.me/+6283813827880">123-456-7890</a></p>
+      </div>
+      <div class="contact-info">
+        <img src="./img/address-icon.png" alt="Address Icon">
+        
+        <p>Jl. Citeko, Galumpit,</p>
+<p>Kec.Tegalwaru, Kabupaten Purwakarta, </p>
+<p>Jawa Barat 41165 </p>
+</br>
+</br>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+  <footer>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Produk</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </footer>
+
+
+<script>
+    // Script untuk membuat slider otomatis
+    const slider = document.querySelector('.slider');
+    let isTransitioning = false;
+
+    function nextSlide() {
+      if (!isTransitioning) {
+        isTransitioning = true;
+        slider.style.transform = 'translateX(-100%)';
+        setTimeout(() => {
+          const firstSlide = slider.children[0];
+          slider.appendChild(firstSlide);
+          slider.style.transform = 'translateX(0)';
+          isTransitioning = false;
+        }, 500);
+      }
+    }
+
+    setInterval(nextSlide, 5000); // Ganti gambar setiap 3 detik
+  </script>
+</body>
+</html>
