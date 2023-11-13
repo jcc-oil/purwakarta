@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.8); /* Hitam dengan alpha 0.8 */
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.1); /* Transparan hitam dengan alpha 0.1 */
+  padding: 10px;
+  transition: background-color 0.5s ease; /* Animasi perubahan warna */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal; /* Mengembalikan berat teks ke normal */
+}
+
+nav a:hover {
+  color: gold; /* Warna emas saat hover */
+  font-weight: bold; /* Membuat teks menjadi tebal saat hover */
+}
+
+.content {
+  padding: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black; /* Warna hitam */
+  color: gold; /* Warna teks kuning emas */
+  text-align: center;
+  padding: 10px;
+  font-weight: bold; /* Membuat teks tebal */
+  transition: background-color 0.5s ease; /* Animasi perubahan warna */
+}
+
+footer:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Transparan hitam dengan alpha 0.8 saat hover */
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  text-align: center;
+}
+.container-1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: trasparent;
+}
+
+article {
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Slider Styles */
+.slider-container {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+/* Tambahkan gaya untuk membuat gambar slider responsif dan tengah */
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Tambahkan gaya untuk membuat slider berada di tengah */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hapus margin-top pada slider-container */
+.slider-container {
+  overflow: hidden;
+}
+
+/* Tambahkan gaya untuk teks di atas slider */
+.slider-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  font-weight: bold;
+}
+.slider-text a {
+  color: gold;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info img {
+  width: 50px; /* Sesuaikan ukuran ikon */
+  height: 50px;
+}
+
+
+.testimony-container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.testimony-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimony {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Warna latar testimoni */
+  border-radius: 10px;
+}
+
+/* Gaya tambahan untuk testimoni-author jika diperlukan */
+.testimony-author {
+  font-style: italic;
+  margin-top: 10px;
+}
+
